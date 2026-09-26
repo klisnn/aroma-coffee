@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Coffee | Байланыс</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav class="navbar">
+    <a href="index.html" class="logo"> Aroma Coffee</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<section class="page-header">
+    <h1>Байланыс</h1>
+    <p>Бізбен байланысыңыз</p>
+</section>
+
+<section class="section contact-section">
+
+    <div class="contact-info">
+
+        <div class="contact-item">
+            <span></span>
+            <div>
+                <h3>Телефон</h3>
+                <p>+7 (700) 123-45-67</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span></span>
+            <div>
+                <h3>Email</h3>
+                <p>info@aromacoffee.kz</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span></span>
+            <div>
+                <h3>Мекенжай</h3>
+                <p>Алматы қ., Абылай хан көшесі, 25</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span></span>
+            <div>
+                <h3>Жұмыс уақыты</h3>
+                <p>Күн сайын: 08:00–22:00</p>
+            </div>
+        </div>
+
+    </div>
+
+    <form class="contact-form" onsubmit="sendMessage(event)">
+
+        <h2>Хабарлама жіберу</h2>
+
+        <label>Аты-жөніңіз</label>
+        <input type="text" placeholder="Аты-жөніңіз" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Email" required>
+
+        <label>Хабарлама</label>
+        <textarea rows="6" placeholder="Хабарламаңызды жазыңыз..." required></textarea>
+
+        <button type="submit" class="btn">Жіберу</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <div class="copyright">
+        © 2026 Aroma Coffee. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
